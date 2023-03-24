@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <br><br><br><br><br>
+    
+    <div class="container ">
+        <div class="wrapper">
+            <h1>GPA Calculator</h1>
+            <div class="form-row">
+                <div class="col">
+                    <input id="course-code" class="form-control" type="text" placeholder="Course Code">
+                </div>
+                <div class="col">
+                    <input id="course-name" class="form-control" type="text" placeholder="Course Name">
+                </div>
+                <div class="col">
+                    <input id="credit" class="form-control" type="number" placeholder="Credit" min="0" max="6">
+                </div>
+                <div class="col">
+                    <select id="grade" class="form-control">
+                        <option value="">Grade</option>
+                        <option value="10">O</option>
+                        <option value="9">A+</option>
+                        <option value="8">A</option>
+                        <option value="7">B+</option>
+                        <option value="6">B</option>
+                        <option value="5">C</option>
+                        <option value="0">U</option>
+                    </select>
+                </div>
+                <br>
+                <div class="coll">
+                    <input id="add" class="btn btn-primary" type="button" value="Add">
+                </div>
+            </div>
+            <table id="table" class="table table-bordered display-none">
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Name</th>
+                        <th>Credits</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="table-body">
+            
+                </tbody>
+                <tfoot id="table-foot">
+            
+                </tfoot>
+            </table>
+            <div class="row">
+                <div class="col">
+                    <input id="calc-gp" class="btn btn-success display-none" type="button" value="Calculate GPA">
+                </div>
+                <div class="col">
+                <input id="clear" class="btn btn-warning display-none" type="button" value="Clear">
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    
+
+    
+    
+    <script src="gpa.js"></script>
+</body>
+</html>
